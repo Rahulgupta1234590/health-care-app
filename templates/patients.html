@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Patients</h2>
+<a href="{{ url_for('add_patient') }}">Add Patient</a>
+<ul>
+    {% for patient in patients %}
+        <li>{{ patient.name }} - Age: {{ patient.age }} - Condition: {{ patient.condition }}</li>
+    {% else %}
+        <li>No patients yet.</li>
+    {% endfor %}
+</ul>
+{% endblock %}
