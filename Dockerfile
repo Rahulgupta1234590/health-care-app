@@ -12,4 +12,4 @@ COPY . .
 EXPOSE 5000
 
 # ✅ Use the correct entrypoint (check if your app starts with run.py or app.py)
-CMD ["python", "run.py"]
+CMD ["python", "app.py"]
