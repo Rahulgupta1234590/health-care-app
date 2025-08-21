@@ -57,4 +57,4 @@ def book_appointment():
     return render_template('book_appointment.html', patients=patients, doctors=doctors)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
